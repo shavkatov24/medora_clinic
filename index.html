@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="icon" type="img" href="./img/logo.png">
+  <title>Medora Clinic — Zamonaviy Tibbiyot Markazi</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">+</span>
+        <span>MEDORA</span> <small>CLINIC</small>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Bosh sahifa</a>
+        <a href="#services">Bo'limlar</a>
+        <a href="#doctors">Shifokorlar</a>
+        <a href="#why-us">Afzalliklar</a>
+        <a href="#contact">Aloqa</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#appointment" class="btn btn-pink nav-btn">Qabulga yozilish</a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menyu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge">Sizning salomatligingiz — bizning oliy maqsadimiz</span>
+          <h1>Zamonaviy va ishonchli tibbiyot markazi</h1>
+          <p>Medora Clinic — so'nggi avlod uskunalar va ko'p yillik tajribaga ega malakali shifokorlar jamoasi bilan
+            salomatligingizni tiklash va muhofaza qilishga tayyor.</p>
+          <div class="hero-btns">
+            <a href="#appointment" class="btn btn-pink btn-large">Qabulga yozilish</a>
+            <a href="#services" class="btn btn-outline btn-large">Bo'limlar bilan tanishish</a>
+          </div>
+
+          <!-- STATISTIKA -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <h3 class="counter" data-target="15">0</h3>
+              <p>Yil tajriba</p>
+            </div>
+            <div class="stat-card">
+              <h3 class="counter" data-target="50">0</h3>
+              <p>Mutaxassislar</p>
+            </div>
+            <div class="stat-card">
+              <h3 class="counter" data-target="20000">0</h3>
+              <p>Sog'lom bemorlar</p>
+            </div>
+            <div class="stat-card">
+              <h3 class="counter" data-target="10">0</h3>
+              <p>Tibbiy bo'limlar</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1000&q=80"
+            alt="Medora Clinic tibbiyot markazi binosi va shifokorlar" class="hero-img" loading="lazy"
+            onerror="this.onerror=null; this.parentElement.classList.add('fallback-img');">
+        </div>
+      </div>
+    </section>
+
+    <!-- BO'LIMLAR (SERVICES) SECTION -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Bizning Bo'limlar</h2>
+          <p>Tibbiyotning 10 ta asosiy yo'nalishi bo'yicha yuqori aniqlikdagi tashxis va samarali davolash xizmatlari.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- 1. Kardiologiya -->
+          <article class="service-card">
+            <div class="card-img-container">
+              <img src="https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?auto=format&fit=crop&w=600&q=80"
+                alt="Kardiologiya - yurak ko'rigi va EKG apparati" loading="lazy"
+                onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'fallback-card-img\'></div>';">
+            </div>
+            <div class="card-body">
+              <h3>Kardiologiya</h3>
+              <p>Yurak-qon tomir tizimini kompleks EKG va EXO tekshiruvlari hamda malakali davolash.</p>
+              <button class="btn btn-link select-dept-btn" data-dept="Kardiologiya">Batafsil & Qabulga yozilish
+                →</button>
+            </div>
+          </article>
+
+          <!-- 2. Kosmetologiya -->
+          <article class="service-card">
+            <div class="card-img-container">
+              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80"
+                alt="Kosmetologiya - yuz parvarishi va muolajalar" loading="lazy"
+                onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'fallback-card-img\'></div>';">
+            </div>
+            <div class="card-body">
+              <h3>Kosmetologiya</h3>
+              <p>Yuz va teri yoshartirish, apparat kosmetologiyasi hamda estetik muolajalar.</p>
+              <button class="btn btn-link select-dept-btn" data-dept="Kosmetologiya">Batafsil & Qabulga yozilish
+                →</button>
+            </div>
+          </article>
+
+          <!-- 3. LOR -->
+          <article class="service-card">
+            <div class="card-img-container">
+              <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80"
+                alt="LOR - quloq, burun va tomoq tekshiruvi" loading="lazy"
+                onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'fallback-card-img\'></div>';">
+            </div>
+            <div class="card-body">
+              <h3>LOR (Quloq, Burun, Tomoq)</h3>
+              <p>LOR a'zolari kasalliklarini zamonaviy endoskopik usullarda tashxis qilish va davolash.</p>
+              <button class="btn btn-link select-dept-btn" data-dept="LOR (Quloq, Burun, Tomoq)">Batafsil & Qabulga
+                yozilish →</button>
+            </div>
+          </article>
+
+          <!-- 4. Nevrologiya -->
+          <article class="service-card">
+            <div class="card-img-container">
+              <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=600&q=80"
+                alt="Nevrologiya - asab tizimi va bosh og'rig'i davolash" loading="lazy"
+                onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'fallback-card-img\'></div>';">
+            </div>
+            <div class="card-body">
+              <h3>Nevrologiya</h3>
+              <p>Bosh og'rig'i, umurtqa va markaziy asab tizimi buzilishlarini samarali davolash.</p>
+              <button class="btn btn-link select-dept-btn" data-dept="Nevrologiya">Batafsil & Qabulga yozilish
+                →</button>
+            </div>
+          </article>
+
+          <!-- 5. Stomatologiya -->
+          <article class="service-card">
+            <div class="card-img-container">
+              <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=600&q=80"
+                alt="Stomatologiya - tish davolash va kabinet" loading="lazy"
+                onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'fallback-card-img\'>🦷</div>';">
+            </div>
+            <div class="card-body">
+              <h3>Stomatologiya</h3>
+              <p>Og'riqsiz tish davolash, protezlash, oqartirish va estetik tabassum yaratish.</p>
+              <button class="btn btn-link select-dept-btn" data-dept="Stomatologiya">Batafsil & Qabulga yozilish
+                →</button>
+            </div>
+          </article>
+
+          <!-- 6. Pediatriya -->
+          <article class="service-card">
+            <div class="card-img-container">
+              <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80"
+                alt="Pediatriya - bolalar shifokori ko'rigi" loading="lazy"
+                onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'fallback-card-img\'>👶</div>';">
+            </div>
+            <div class="card-body">
+              <h3>Pediatriya</h3>
+              <p>Kichik yoshdagi bolalar salomatligini muntazam kuzatish, emlash va mehr bilan davolash.</p>
+              <button class="btn btn-link select-dept-btn" data-dept="Pediatriya">Batafsil & Qabulga yozilish →</button>
+            </div>
+          </article>
+
+          <!-- 7. Ginekologiya -->
+          <article class="service-card">
+            <div class="card-img-container">
+              <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80"
+                alt="Ginekologiya - ayollar salomatligi va ko'rik" loading="lazy"
+                onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'fallback-card-img\'>👩</div>';">
+            </div>
+            <div class="card-body">
+              <h3>Ginekologiya</h3>
+              <p>Ayollar salomatligini muhofaza qilish, homiladorlikni nazorat qilish va ultratovush.</p>
+              <button class="btn btn-link select-dept-btn" data-dept="Ginekologiya">Batafsil & Qabulga yozilish
+                →</button>
+            </div>
+          </article>
+
+        </div>
+        
+         
+        </div>
+        </article>
+
+
+    <!-- SHIFOKORLAR SECTION -->
+    <section class="doctors" id="doctors">
+      <div class="container">
+        <div class="section-header">
+          <h2>Malakali Mutaxassislarimiz</h2>
+          <p>O'z sohasi bo me'yori va ilg'or tajribaga ega bo'lgan professional shifokorlarimiz xizmatingizda.</p>
+        </div>
+
+        <div class="doctors-grid">
+          <!-- 1 -->
+          <div class="doctor-card">
+            <div class="doc-icon-avatar"></div>
+            <div class="doc-info">
+              <h3>Dr. Alisher Rasulov</h3>
+              <span class="doc-type">Kardiolog</span>
+              <p class="exp-badge">14 yil tajriba</p>
+              <button class="btn btn-pink select-dept-btn" data-dept="Kardiologiya">Qabulga yozilish</button>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="doctor-card">
+            <div class="doc-icon-avatar"></div>
+            <div class="doc-info">
+              <h3>Dr. Malika Umarova</h3>
+              <span class="doc-type">Kosmetolog</span>
+              <p class="exp-badge">9 yil tajriba</p>
+              <button class="btn btn-pink select-dept-btn" data-dept="Kosmetologiya">Qabulga yozilish</button>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="doctor-card">
+            <div class="doc-icon-avatar"></div>
+            <div class="doc-info">
+              <h3>Dr. Jamshid Karimov</h3>
+              <span class="doc-type">LOR Shifokori</span>
+              <p class="exp-badge">12 yil tajriba</p>
+              <button class="btn btn-pink select-dept-btn" data-dept="LOR (Quloq, Burun, Tomoq)">Qabulga
+                yozilish</button>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="doctor-card">
+            <div class="doc-icon-avatar"></div>
+            <div class="doc-info">
+              <h3>Dr. Shahnoza Sobirova</h3>
+              <span class="doc-type">Nevrolog</span>
+              <p class="exp-badge">16 yil tajriba</p>
+              <button class="btn btn-pink select-dept-btn" data-dept="Nevrologiya">Qabulga yozilish</button>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="doctor-card">
+            <div class="doc-icon-avatar"></div>
+            <div class="doc-info">
+              <h3>Dr. Sardor Rahimberdiyev</h3>
+              <span class="doc-type">Stomatolog</span>
+              <p class="exp-badge">10 yil tajriba</p>
+              <button class="btn btn-pink select-dept-btn" data-dept="Stomatologiya">Qabulga yozilish</button>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="doctor-card">
+            <div class="doc-icon-avatar"></div>
+            <div class="doc-info">
+              <h3>Dr. Gulnora Saidova</h3>
+              <span class="doc-type">Pediatr</span>
+              <p class="exp-badge">18 yil tajriba</p>
+              <button class="btn btn-pink select-dept-btn" data-dept="Pediatriya">Qabulga yozilish</button>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="doctor-card">
+            <div class="doc-icon-avatar"></div>
+            <div class="doc-info">
+              <h3>Dr. Dilnoza Ahmedova</h3>
+              <span class="doc-type">Ginekolog</span>
+              <p class="exp-badge">15 yil tajriba</p>
+              <button class="btn btn-pink select-dept-btn" data-dept="Ginekologiya">Qabulga yozilish</button>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="doctor-card">
+            <div class="doc-icon-avatar"></div>
+            <div class="doc-info">
+              <h3>Dr. Bobur Azimov</h3>
+              <span class="doc-type">Oftalmolog</span>
+              <p class="exp-badge">11 yil tajriba</p>
+              <button class="btn btn-pink select-dept-btn" data-dept="Oftalmologiya">Qabulga yozilish</button>
+            </div>
+          </div>
+
+          <!-- 9 -->
+          <div class="doctor-card">
+            <div class="doc-icon-avatar"></div>
+            <div class="doc-info">
+              <h3>Dr. Kamola Tursunova</h3>
+              <span class="doc-type">Dermatolog</span>
+              <p class="exp-badge">8 yil tajriba</p>
+              <button class="btn btn-pink select-dept-btn" data-dept="Dermatologiya">Qabulga yozilish</button>
+            </div>
+          </div>
+
+          <!-- 10 -->
+          <div class="doctor-card">
+            <div class="doc-icon-avatar"></div>
+            <div class="doc-info">
+              <h3>Dr. Otabek Mahmudov</h3>
+              <span class="doc-type">Urolog</span>
+              <p class="exp-badge">13 yil tajriba</p>
+              <button class="btn btn-pink select-dept-btn" data-dept="Urologiya">Qabulga yozilish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEGA AYNAN BIZ SECTION -->
+    <section class="why-us" id="why-us">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Nega Aynan Medora Clinic?</h2>
+          <p>Biz har bir bemorga alohida g'amxo'rlik va eng yuqori standartdagi tibbiy xizmatni kafolatlaymiz.</p>
+        </div>
+
+        <div class="advantages-grid">
+          <div class="adv-card">
+            <div class="adv-icon"></div>
+            <h3>Zamonaviy uskunalar</h3>
+            <p>Germaniya va Yaponiya texnologiyalari asosida aniq diagnostika.</p>
+          </div>
+          <div class="adv-card">
+            <div class="adv-icon"></div>
+            <h3>Tajribali mutaxassislar</h3>
+            <p>Xalqaro toifadagi, ko'p yillik amaliy tajribaga ega shifokorlar.</p>
+          </div>
+          <div class="adv-card">
+            <div class="adv-icon"></div>
+            <h3>Navbatsiz va tez qabul</h3>
+            <p>Vaqtingizni qadrlaymiz — belgilangan soatda qabulga kirasiz.</p>
+          </div>
+          <div class="adv-card">
+            <div class="adv-icon"></div>
+            <h3>Hamyonbop narxlar</h3>
+            <p>Yuqori sifatli tibbiy xizmatlar uchun shaffof va qulay narxlar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEMOR QABULI FORMASI -->
+    <section class="appointment" id="appointment">
+      <div class="container">
+        <div class="appointment-wrapper">
+          <div class="form-header">
+            <h2>Shifokor Qabuliga Yozilish</h2>
+            <p>Quyidagi shaklni to'ldiring, mutaxassislarimiz siz bilan tezda bog'lanishadi.</p>
+          </div>
+
+          <form id="appointmentForm" class="appointment-form" novalidate>
+            <div class="form-grid">
+              <!-- Ism Familiya -->
+              <div class="form-group">
+                <label for="fullName">Ism va Familiyangiz *</label>
+                <input type="text" id="fullName" placeholder="Masalan: Aziz Rahimov" required>
+                <span class="error-msg" id="nameError"></span>
+              </div>
+
+              <!-- Telefon -->
+              <div class="form-group">
+                <label for="phone">Telefon raqamingiz *</label>
+                <input type="tel" id="phone" value="+998 (" placeholder="+998 (XX) XXX-XX-XX" required>
+                <span class="error-msg" id="phoneError"></span>
+              </div>
+
+              <!-- Bo'lim tanlash -->
+              <div class="form-group">
+                <label for="department">Bo'limni tanlang *</label>
+                <select id="department" required>
+                  <option value="" disabled selected>Bo'limni tanlang...</option>
+                  <option value="Kardiologiya">Kardiologiya</option>
+                  <option value="Kosmetologiya">Kosmetologiya</option>
+                  <option value="LOR (Quloq, Burun, Tomoq)">LOR (Quloq, Burun, Tomoq)</option>
+                  <option value="Nevrologiya">Nevrologiya</option>
+                  <option value="Stomatologiya">Stomatologiya</option>
+                  <option value="Pediatriya">Pediatriya</option>
+                  <option value="Ginekologiya">Ginekologiya</option>
+                  <option value="Oftalmologiya">Oftalmologiya</option>
+                  <option value="Dermatologiya">Dermatologiya</option>
+                  <option value="Urologiya">Urologiya</option>
+                </select>
+                <span class="error-msg" id="deptError"></span>
+              </div>
+
+              <!-- Qulay Sana va Vaqt -->
+              <div class="form-group">
+                <label for="dateTime">Qulay sana va vaqt *</label>
+                <input type="datetime-local" id="dateTime" required>
+                <span class="error-msg" id="dateError"></span>
+              </div>
+
+              <!-- Murojaat sababi -->
+              <div class="form-group full-width">
+                <label for="reason">Murojaat sababi / Belangilar</label>
+                <textarea id="reason" rows="4"
+                  placeholder="Qanday masala bo'yicha murojaat qilyapsiz? (ixchamgina yozing)"></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-pink btn-large btn-block">Arizani yuborish</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEMORLAR FIKRLARI -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>Bemorlarimiz Fikrlari</h2>
+          <p>Bizning xizmatlarimizdan mamnun bo'lgan bemorlar mulohazalari.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testi-card">
+            <p>"Kardiologiya bo'limida ko'rikdan o'tdim. Shifokorlar juda e'tiborli va zamonaviy uskunalar yordamida
+              aniq tashxis qo'yishdi. Rahmat!"</p>
+            <div class="testi-author">
+              <div class="avatar-circle">B</div>
+              <div>
+                <h4>Bemor (Jasur K.)</h4>
+                <span>Kardiologiya bemori</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <p>"Stomatolog shifokor mutlaqo og'riqsiz tishimni davolab berdi. Klinika sharoiti va tozaligi juda yuqori
+              darajada."</p>
+            <div class="testi-author">
+              <div class="avatar-circle">B</div>
+              <div>
+                <h4>Bemor (Nigora M.)</h4>
+                <span>Stomatologiya bemori</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <p>"Pediatriya bo me'yorida shifokorlar bolamga juda iliq munosabatda bo'lishdi. Navbat kutmasdan tezda
+              ko'rikdan o'tdik."</p>
+            <div class="testi-author">
+              <div class="avatar-circle">B</div>
+              <div>
+                <h4>Bemor (Umida A.)</h4>
+                <span>Pediatriya bemori</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALOQA VA MANZIL -->
+    <section class="contact" id="contact">
+      <div class="container grid-2">
+        <div class="contact-info">
+          <h2>Biz bilan bog'laning</h2>
+          <p>Savollaringiz bormi? Bizga qo'ng'iroq qiling yoki klinikaga tashrif buyuring.</p>
+
+          <div class="contact-details">
+            <div class="c-item">
+              <span class="c-icon">📍</span>
+              <div>
+                <h4>Manzil:</h4>
+                <p>Toshkent shahri, Yunusobod tumani, Amir Temur ko'chasi, 105-uy</p>
+              </div>
+            </div>
+
+            <div class="c-item">
+              <span class="c-icon"></span>
+              <div>
+                <h4>Telefon raqamlar:</h4>
+                <p>+998 (71) 200-00-11 / +998 (90) 123-45-67</p>
+              </div>
+            </div>
+
+            <div class="c-item">
+              <span class="c-icon"></span>
+              <div>
+                <h4>Ish vaqti:</h4>
+                <p>Dushanba - Shanba: 08:00 - 20:00 (Yakshanba: Dam olish)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-box">
+          <div class="map-placeholder">
+            <span></span>
+            <h3>Medora Clinic Xaritasi</h3>
+            <p>Toshkent sh., Yunusobod t., Amir Temur ko'chasi, 105-uy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="f-col">
+        <a href="#" class="logo footer-logo">
+          <span class="logo-icon">+</span>
+          <span>MEDORA</span> <small>CLINIC</small>
+        </a>
+        <p>Siz va oilangiz salomatligi uchun zamonaviy tibbiy yechimlar va yuqori darajadagi g'amxo'rlik.</p>
+      </div>
+
+      <div class="f-col">
+        <h4>Tez havolalar</h4>
+        <ul>
+          <li><a href="#home">Bosh sahifa</a></li>
+          <li><a href="#services">Bo'limlar</a></li>
+          <li><a href="#doctors">Shifokorlar</a></li>
+          <li><a href="#appointment">Qabulga yozilish</a></li>
+        </ul>
+      </div>
+
+      <div class="f-col">
+        <h4>Bo'limlarimiz</h4>
+        <ul>
+          <li><a href="#services">Kardiologiya</a></li>
+          <li><a href="#services">Stomatologiya</a></li>
+          <li><a href="#services">Nevrologiya</a></li>
+          <li><a href="#services">Pediatriya</a></li>
+        </ul>
+      </div>
+
+      <div class="f-col">
+        <h4>Bizni kuzatib boring</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Telegram">Telegram</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Medora Clinic. Barcha huquqlar himoyalangan.</p>
+    </div>
+  </footer>
+
+  <!-- SUCCESS MODAL -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-card">
+      <div class="modal-icon">✓</div>
+      <h3>Arizangiz qabul qilindi!</h3>
+      <p>Tez orada klinika operatorlari ko'rsatilgan telefon raqamingiz bo'yicha bog'lanib, qabul vaqtini tasdiqlashadi.
+      </p>
+      <button class="btn btn-green btn-large" id="closeModalBtn">Tushundim</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
